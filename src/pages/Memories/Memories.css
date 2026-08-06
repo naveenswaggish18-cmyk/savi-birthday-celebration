@@ -1,0 +1,244 @@
+.memories-page{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top left,#5b21b6 0%,#312e81 35%,#1e1b4b 70%,#0f172a 100%);
+
+    background-size:250% 250%;
+
+    animation:backgroundMove 15s ease infinite;
+
+    box-shadow:inset 0 0 220px rgba(0,0,0,.28);
+}
+
+
+.memories-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:#ec4899;
+
+    filter:blur(180px);
+
+    opacity:.14;
+
+    top:-150px;
+
+    left:-150px;
+
+    pointer-events:none;
+}
+
+.memories-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:#8b5cf6;
+
+    filter:blur(180px);
+
+    opacity:.16;
+
+    bottom:-120px;
+
+    right:-120px;
+
+    pointer-events:none;
+}
+
+
+@keyframes backgroundMove{
+
+0%{
+
+    background-position:0% 50%;
+
+}
+
+50%{
+
+    background-position:100% 50%;
+
+}
+
+100%{
+
+    background-position:0% 50%;
+
+}
+
+}
+
+
+.sparkle{
+
+    position:absolute;
+
+    width:5px;
+
+    height:5px;
+
+    border-radius:50%;
+
+    background:white;
+
+    opacity:.35;
+
+    animation:floatUp linear infinite;
+
+    pointer-events:none;
+}
+
+@keyframes floatUp{
+
+0%{
+
+    transform:translateY(60px);
+
+    opacity:0;
+
+}
+
+30%{
+
+    opacity:.4;
+
+}
+
+100%{
+
+    transform:translateY(-100vh);
+
+    opacity:0;
+
+}
+
+}
+
+
+.memories-page{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #312e81 30%,
+        #4c1d95 60%,
+        #1e1b4b 100%
+    );
+}
+
+
+.memories-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    background:#ec4899;
+
+    border-radius:50%;
+
+    filter:blur(180px);
+
+    top:-200px;
+
+    left:-200px;
+
+    opacity:.30;
+
+    animation:movePink 15s ease-in-out infinite alternate;
+
+    z-index:0;
+}
+
+.memories-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    background:#8b5cf6;
+
+    border-radius:50%;
+
+    filter:blur(180px);
+
+    bottom:-200px;
+
+    right:-200px;
+
+    opacity:.30;
+
+    animation:movePurple 18s ease-in-out infinite alternate;
+
+    z-index:0;
+}
+
+
+@keyframes movePink{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(120px,80px);
+
+    }
+
+}
+
+@keyframes movePurple{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(-120px,-100px);
+
+    }
+
+}

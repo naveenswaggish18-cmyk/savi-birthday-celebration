@@ -1,0 +1,100 @@
+.welcome-page{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    radial-gradient(circle at top left,#312e81 0%,#0f172a 45%,#020617 100%);
+}
+
+
+/* Floating Blur Orbs */
+
+.gradient-orb{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(130px);
+
+    opacity:.45;
+
+    animation:float 12s ease-in-out infinite;
+}
+
+.orb-1{
+
+    width:380px;
+
+    height:380px;
+
+    background:#ec4899;
+
+    top:-120px;
+
+    left:-100px;
+}
+
+.orb-2{
+
+    width:420px;
+
+    height:420px;
+
+    background:#8b5cf6;
+
+    bottom:-180px;
+
+    right:-150px;
+
+    animation-delay:3s;
+}
+
+.orb-3{
+
+    width:220px;
+
+    height:220px;
+
+    background:#3b82f6;
+
+    top:45%;
+
+    left:55%;
+
+    animation-delay:6s;
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px) translateX(0px);
+
+}
+
+50%{
+
+transform:translateY(-35px) translateX(25px);
+
+}
+
+100%{
+
+transform:translateY(0px) translateX(0px);
+
+}
+
+}

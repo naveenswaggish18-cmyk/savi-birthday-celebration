@@ -1,0 +1,200 @@
+.hero{
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 24px;
+}
+
+.hero-container{
+
+    width: 100%;
+
+    max-width: 700px;
+
+    text-align: center;
+}
+
+.hero-heading{
+
+    font-size: 16px !important;
+
+    letter-spacing: 10px;
+
+    color: #CBD5E1;
+
+    margin-bottom: 24px !important;
+}
+
+.hero-name{
+
+    font-size: 72px !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px !important;
+
+    background: linear-gradient(
+        90deg,
+        #EC4899,
+        #8B5CF6
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-quote{
+
+    width: 100%;
+
+    max-width: 550px;
+
+    margin: 0 auto 20px !important;
+
+    color: #D1D5DB;
+
+    font-size: 22px !important;
+
+    line-height: 1.8;
+}
+
+.hero-message{
+
+    color: #94A3B8;
+
+    font-size: 18px !important;
+
+    margin-bottom: 45px !important;
+}
+
+.hero-button{
+
+    background: linear-gradient(
+        135deg,
+        #EC4899,
+        #8B5CF6
+    ) !important;
+
+    padding: 16px 42px !important;
+
+    border-radius: 50px !important;
+
+    font-size: 18px !important;
+
+    font-weight: 600 !important;
+
+    transition: .3s !important;
+}
+
+.hero-button:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 20px 40px rgba(236,72,153,.35);
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 992px){
+
+    .hero{
+
+        padding: 40px 20px;
+    }
+
+    .hero-name{
+
+        font-size: 60px !important;
+    }
+
+    .hero-quote{
+
+        font-size: 20px !important;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px){
+
+    .hero{
+
+        padding: 32px 20px;
+    }
+
+    .hero-heading{
+
+        letter-spacing: 6px;
+
+        font-size: 14px !important;
+    }
+
+    .hero-name{
+
+        font-size: 48px !important;
+    }
+
+    .hero-quote{
+
+        font-size: 18px !important;
+
+        line-height: 1.7;
+    }
+
+    .hero-message{
+
+        font-size: 16px !important;
+    }
+
+    .hero-button{
+
+        width: 100%;
+
+        max-width: 320px;
+
+        padding: 15px 24px !important;
+    }
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 480px){
+
+    .hero-name{
+
+        font-size: 38px !important;
+    }
+
+    .hero-quote{
+
+        font-size: 16px !important;
+    }
+
+    .hero-message{
+
+        font-size: 15px !important;
+    }
+
+    .hero-button{
+
+        font-size: 16px !important;
+    }
+
+}
