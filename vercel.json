@@ -1,0 +1,10 @@
+{
+  "services": {
+    "frontend": {
+      "entrypoint": "package.json"
+    },
+    "backend": {
+      "entrypoint": "backend/manage.py"
+    }
+  }
+}
