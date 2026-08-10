@@ -33,7 +33,7 @@ function EmailLogin() {
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/auth/send-otp/",
+                "https://savi-birthday-celebration-oqtw-five.vercel.app/api/auth/send-otp/",
                 {
                     method: "POST",
 

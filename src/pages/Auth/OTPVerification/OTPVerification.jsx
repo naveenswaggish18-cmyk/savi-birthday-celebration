@@ -55,7 +55,7 @@ function VerifyOTP() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/api/auth/verify-otp/",
+            "https://savi-birthday-celebration-oqtw-five.vercel.app/api/auth/verify-otp/",
             {
                 method: "POST",
 
